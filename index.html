@@ -1,0 +1,151 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css">
+        <link rel="stylesheet" href="https://classless.de/classless.css">
+        <title>M 2 H</title>
+    </head>
+    <body>
+         
+      <h1>Example Post</h1>
+      <small>Sat, Sep 30, 2023 | Reading Time : 3 min</small>
+      <div><h1 id="what-is-markdown">What is Markdown?</h1>
+<p>Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like <code>#</code> or <code>*</code>.</p>
+<h1 id="syntax-guide">Syntax guide</h1>
+<p>Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com or in your own text files.</p>
+<h2 id="headers">Headers</h2>
+<pre><code class="hljs"># This is a h1 tag
+
+## This is a h2 tag
+
+#### This is a h4 tag</code></pre>
+<h1 id="this-is-a-h1-tag">This is a h1 tag</h1>
+<h2 id="this-is-a-h2-tag">This is a h2 tag</h2>
+<h4 id="this-is-a-h4-tag">This is a h4 tag</h4>
+<h2 id="emphasis">Emphasis</h2>
+<pre><code class="hljs"><span class="hljs-variable">_This</span> <span class="hljs-built_in">text</span> will be italic_
+
+**This <span class="hljs-built_in">text</span> will be bold**
+
+<span class="hljs-variable">_You</span> **can** combine them_</code></pre>
+<p><em>This text will be italic</em></p>
+<p><strong>This text will be bold</strong></p>
+<p><em>You <strong>can</strong> combine them</em></p>
+<h2 id="lists">Lists</h2>
+<h3 id="unordered">Unordered</h3>
+<pre><code class="hljs"><span class="hljs-bullet">-</span> Item 1
+<span class="hljs-bullet">-</span> Item 2
+<span class="hljs-bullet">  -</span> Item 2a
+<span class="hljs-bullet">  -</span> Item 2b</code></pre>
+<ul>
+<li>Item 1</li>
+<li>Item 2<ul>
+<li>Item 2a</li>
+<li>Item 2b</li></ul></li>
+</ul>
+<h3 id="ordered">Ordered</h3>
+<pre><code class="hljs"><span class="hljs-attribute">1</span>. Item <span class="hljs-number">1</span>
+<span class="hljs-attribute">1</span>. Item <span class="hljs-number">2</span>
+<span class="hljs-attribute">1</span>. Item <span class="hljs-number">3</span>
+   <span class="hljs-attribute">1</span>. Item <span class="hljs-number">3</span>a
+   <span class="hljs-attribute">1</span>. Item <span class="hljs-number">3</span>b</code></pre>
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3<ol>
+<li>Item 3a</li>
+<li>Item 3b</li></ol></li>
+</ol>
+<h2 id="images">Images</h2>
+<pre><code class="hljs">!<span class="hljs-selector-attr">[GitHub Logo]</span>(<span class="hljs-attribute">https</span>:<span class="hljs-comment">//github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)</span>
+<span class="hljs-attribute">Format</span>: ![Alt Text](url)</code></pre>
+<p><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="36" height="36" /></p>
+<h2 id="links">Links</h2>
+<pre><code class="hljs">http:<span class="hljs-comment">//github.com - automatic!</span>
+<span class="hljs-string">[GitHub]</span>(http:<span class="hljs-comment">//github.com)</span></code></pre>
+<p><a href="http://github.com" rel="noopener noreferrer" target="_blank">http://github.com</a> - automatic!<br />
+<a href="http://github.com" rel="noopener noreferrer" target="_blank">GitHub</a></p>
+<h2 id="blockquotes">Blockquotes</h2>
+<pre><code class="hljs">As Kanye West said:
+
+<span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript"><span class="hljs-title class_">We</span><span class="hljs-string">&#x27;re living the future so</span></span>
+<span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript"><span class="hljs-string">the present is our past.</span></span></code></pre>
+<p>As Kanye West said:</p>
+<blockquote>
+  <p>We're living the future so<br />
+  the present is our past.</p>
+</blockquote>
+<h2 id="inline-code">Inline code</h2>
+<pre><code class="hljs">I think you should use an
+`&lt;addr&gt;` element here instead.</code></pre>
+<p>I think you should use an<br />
+<code>&lt;addr&gt;</code> element here instead.</p>
+<h2 id="syntax-highlighting">Syntax highlighting</h2>
+<p>Here’s an example of how you can use syntax highlighting with <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/" rel="noopener noreferrer" target="_blank">GitHub Flavored Markdown</a>:</p>
+<pre><code class="hljs">```js:fancyAlert<span class="hljs-selector-class">.js</span>
+function <span class="hljs-built_in">fancyAlert</span>(arg) {
+  <span class="hljs-keyword">if</span> (arg) {
+    $<span class="hljs-selector-class">.facebox</span>({ <span class="hljs-selector-tag">div</span>: <span class="hljs-string">&#x27;#foo&#x27;</span> })
+  }
+}
+```</code></pre>
+<p>And here's how it looks - nicely colored with styled code titles!</p>
+<pre class="js:fancyAlert.js language-js:fancyAlert.js"><code class="hljs js:fancyAlert.js language-js:fancyAlert.js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">fancyAlert</span>(<span class="hljs-params">arg</span>) {
+  <span class="hljs-keyword">if</span> (arg) {
+    $.facebox({ <span class="hljs-attr">div</span>: <span class="hljs-string">&#x27;#foo&#x27;</span> })
+  }
+}</code></pre>
+<h2 id="footnotes">Footnotes</h2>
+<pre><code class="hljs">Here <span class="hljs-keyword">is</span> a simple footnote[^<span class="hljs-number">1</span>]. With <span class="hljs-keyword">some</span> additional <span class="hljs-built_in">text</span> <span class="hljs-keyword">after</span> <span class="hljs-keyword">it</span>.
+
+[^<span class="hljs-number">1</span>]: My <span class="hljs-keyword">reference</span>.</code></pre>
+<p>Here is a simple footnote[^1]. With some additional text after it.</p>
+<p>[^1]: My reference.</p>
+<h2 id="task-lists">Task Lists</h2>
+<pre><code class="hljs">- [x] list syntax required (any unordered or ordered list supported)
+- [x] <span class="hljs-keyword">this</span> <span class="hljs-keyword">is</span> a complete item
+- [ ] <span class="hljs-keyword">this</span> <span class="hljs-keyword">is</span> an incomplete item</code></pre>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;" checked> list syntax required (any unordered or ordered list supported)</li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;" checked> this is a complete item</li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> this is an incomplete item</li>
+</ul>
+<h2 id="tables">Tables</h2>
+<p>You can create tables by assembling a list of words and dividing them with hyphens <code>-</code> (for the first row), and then separating each column with a pipe <code>|</code>:</p>
+<pre><code class="hljs">|<span class="hljs-string"> First Header                </span>|<span class="hljs-string"> Second Header                </span>|
+|<span class="hljs-string"> --------------------------- </span>|<span class="hljs-string"> ---------------------------- </span>|
+|<span class="hljs-string"> Content from cell 1         </span>|<span class="hljs-string"> Content from cell 2          </span>|
+|<span class="hljs-string"> Content in the first column </span>|<span class="hljs-string"> Content in the second column </span>|</code></pre>
+<table>
+<thead>
+<tr>
+<th id="first_header">First Header</th>
+<th id="second_header">Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content from cell 1</td>
+<td>Content from cell 2</td>
+</tr>
+<tr>
+<td>Content in the first column</td>
+<td>Content in the second column</td>
+</tr>
+</tbody>
+</table>
+<h2 id="strikethrough">Strikethrough</h2>
+<p>Any word wrapped with two tildes (like <code>~~this~~</code>) will appear <del>crossed out</del>.</p></div>
+      <small>Last Modified : Fri, Dec 8, 2023 </small>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/phothinmg/ptm@main/hljsCopyBtn.js"></script>
+    </body>
+    </html>
+    
+    

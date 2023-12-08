@@ -1,0 +1,22 @@
+{
+  "name": "markdown-converter",
+  "version": "1.0.0",
+  "description": "Convert markdown to HTML with Showdown.js",
+  "main": "index.js",
+  "author": "Pho Thin Maung",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "private": false,
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "showdown": "^2.1.0",
+    "showdown-highlight": "^3.1.0",
+    "write-file-safe": "^2.0.3"
+  },
+  "devDependencies": {
+    "chalk": "^5.3.0"
+  }
+}
