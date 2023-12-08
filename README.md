@@ -1,5 +1,5 @@
 # Convert Markdown To MTML 
-
+---
 ###  အသုံးပြုသည့် Packages များ
 
 1. Showdown JS
@@ -7,7 +7,7 @@
 3. gray-matter
 4. write-file-safe
 5. chalk
-
+---
 #### template.js
 
 Markdown ကနေ HTML generate လုပ်တဲ့အခါ အသုံးပြုမည့် template ပါ..CSS နှင့် Highlight. js အတွက် လိုအပ်တာတွေကို external link ချိတ်ထားပါသည်။ es6-string-html VS Code Extension  https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html ကို install လုပ်ထားရင်  template literalsတွေကို VS Code မှာ Highlight လုပ်ပေးပါတယ်
@@ -38,7 +38,7 @@ export default function template(content){
     return html
 }
 ```
-
+---
 #### build.js မှ  functions များ
 
 **Showdown**
@@ -104,6 +104,17 @@ const readTime = (text) => {
     const words = text.trim().split(/\s+/).length;
     return Math.ceil(words / wpm);
     
+};
+```
+
+Markdown ဖိုင်ကို နောက်ဆုံး update လုပ်ခဲ့သောရက်ကိုဖော်ပြပေးမှာပါ
+
+
+```javascript
+const lastUpdate = (filePath) => {
+    const stats = fs.statSync(filePath);
+    const lastModifiedTime = stats.mtime.toISOString();
+    return lastModifiedTime;
 };
 ```
 
@@ -204,5 +215,7 @@ setTimeout(()=>{
 
 **ကျနော် javascript လေ့လာရင်း blog app လုပ်လိုတဲ့ စိတ်ရှိနေလို အခုလို markdown ကနေ html ပြောင်းတာကို လုပ်ဖြစ်နေပါတယ်**
 
-**showdown သုံးတာထက်ကောင်းတဲ့နည်းလမ်းတွေလည်း ရှိပါတယ်.... အခု လည်း ကျနော် လေ့ကျင့်တဲ့အနေနဲ့ပဲ လုပ်ထားတာဖြစ်ပါတယ်.. လိုအပ်တာတွေ ဝေဖန် တည့်မတ်ပေးဖို မေတ္တရပ်ပါသည်။**
+**showdown သုံးတာထက်ကောင်းတဲ့နည်းလမ်းတွေလည်း ရှိပါတယ်.... အခု လည်း ကျနော် လေ့ကျင့်တဲ့အနေနဲ့ပဲ လုပ်ထားတာဖြစ်ပါတယ်.. လိုအပ်တာတွေ ဝေဖန် တည့်မတ်ပေးပါ**
+
+---
 
